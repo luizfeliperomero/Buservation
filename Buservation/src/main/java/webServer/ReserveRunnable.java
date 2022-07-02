@@ -1,9 +1,6 @@
 package webServer;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.Socket;
 
 public class ReserveRunnable implements Runnable {
@@ -16,13 +13,20 @@ public class ReserveRunnable implements Runnable {
     @Override
     public void run() {
         try {
-           BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-           PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
-           String info = in.readLine();
-           StringBuilder request = new StringBuilder();
-           if(info.equals("reserve")) {
-               System.out.println("200 OK ");
-           }
+            ObjectOutputStream output = new ObjectOutputStream(clientSocket.getOutputStream());
+            ObjectInputStream input = new ObjectInputStream(clientSocket.getInputStream());
+
+            String message = input.readUTF();
+
+            System.out.println("Message: "+message);
+            output.writeUTF("200 MESSAGE RECEIVED");
+            output.flush();
+
+            input.close();
+            output.close();
+            clientSocket.close();
+
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

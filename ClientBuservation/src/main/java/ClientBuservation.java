@@ -1,26 +1,31 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.Socket;
 
 public class ClientBuservation {
     public static void main(String[] args) {
-        String serverIP = "192.168.1.108";
+        String serverIP = "localhost";
         int port = 8081;
         Socket socket;
-        PrintWriter out;
-        BufferedReader in;
-        InputStreamReader isr;
 
         try {
 
             socket = new Socket(serverIP, port);
-            out = new PrintWriter(socket.getOutputStream(), true);
-            isr = new InputStreamReader(socket.getInputStream());
-            in = new BufferedReader(isr);
 
-            out.println("reserve");
+            ObjectOutputStream output = new ObjectOutputStream(socket.getOutputStream());
+            ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
+
+            String message = "RESERVE SEAT";
+            output.writeUTF(message);
+            output.flush();
+
+            message = input.readUTF();
+            System.out.println("RESPONSE: "+message);
+
+            input.close();
+            output.close();
+            socket.close();
+
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
