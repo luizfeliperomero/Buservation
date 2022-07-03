@@ -9,6 +9,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.sql.Timestamp;
 import java.util.Iterator;
 
 import static webServer.Server.avaiableSeats;
@@ -24,18 +25,19 @@ public class Log {
 
 
     public synchronized Response bookTickets(Seat seat) {
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         String msg = "";
         File file = new File("C:\\Users\\luizf\\Desktop\\test\\oSystem\\Buservation\\Buservation\\log.txt");
         Response response = Response.OK;
 
         String socketIp = socket.getInetAddress().toString();
         if(avaiableSeats.size() == 0) {
-            msg = socketIp +" Tried to book a ticket but there was none left";
+            msg = "BOOKING ----- "+socketIp +" Tried to book a ticket but there was none left ----- " +timestamp;
             response = Response.EMPTY;
         }
         else {
             if(!avaiableSeats.contains(seat)){
-                msg = "BOOKING ----- " + socketIp + " Tried to book seat " + seat.getId() + " but it wasn't available";
+                msg = "BOOKING ----- " + socketIp + " Tried to book seat " + seat.getId() + " but it wasn't available -----" +timestamp;
                 response = Response.ERROR;
             }
             else {
@@ -43,7 +45,7 @@ public class Log {
                 while (itr.hasNext()){
                     Seat s = itr.next();
                     if(s.getId() == seat.getId()){
-                        msg = "BOOKING ----- " + "Seat " + s.getId() + " Booked by " + socketIp;
+                        msg = "BOOKING ----- " + "Seat " + s.getId() + " Booked by " + socketIp + " ----- " +timestamp;
                         s.setEmpty(false);
                         itr.remove();
                     }
