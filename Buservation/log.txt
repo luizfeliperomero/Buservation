@@ -56,3 +56,8 @@ BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available
 BOOKING ----- Seat 2 Booked by /0:0:0:0:0:0:0:1
 BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 2 but it wasn't available
 BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 2 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 2 but it wasn't available
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available

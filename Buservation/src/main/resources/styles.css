@@ -15,7 +15,7 @@ body {
 
 main {
     background-color: #1e1e1e;
-    gap: 70px;
+    gap: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,10 +43,14 @@ button {
     transition: 0.5s ease-in-out;
 }
 
-.img {
+.road {
     border: 5px solid #fff;
+    width: 100%;
     border-right: none;
     border-left: none;
+}
+
+.img {
     width: 100%;
     display: flex;
     justify-content: space-between;
