@@ -12,7 +12,7 @@ public class Server {
             seats.add(new Seat(i, true));
         }
         for (Seat s: seats) {
-            if(s.isEmpty() == true){
+            if(s.isEmpty()){
                 avaiableSeats.add(s);
             }
         }

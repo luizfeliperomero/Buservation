@@ -9,6 +9,10 @@ public class Seat {
         this.empty = true;
     }
 
+    public Seat(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }

@@ -1,12 +1,15 @@
 package webServer;
 
 import Log.Log;
+import model.Seat;
 
 import java.io.*;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+
+import static webServer.Server.seats;
 
 public class ReserveRunnable implements Runnable {
     protected Socket clientSocket;
@@ -61,12 +64,16 @@ public class ReserveRunnable implements Runnable {
                 recurso = recurso.substring(1);
                 String[] recursoSplited = recurso.split("\\?");
                 recurso = recursoSplited[0];
-                if(recurso.equals("reserve.html")) {
-                    String recursoId = recursoSplited[1].substring(3);
+                if(recurso.equals("reserve")) {
+                    int recursoId = Integer.parseInt(recursoSplited[1].substring(3));
                     System.out.println("Recurso Posicao 2: " + recursoId);
                     recurso = "index.html";
                     Log log = new Log(clientSocket);
-                    log.bookTickets(Integer.parseInt(recursoId));
+                    for (Seat s: seats) {
+                        if(s.getId() == recursoId){
+                            log.bookTickets(s);
+                        }
+                    }
 
                 }
                 System.out.println("Recurso GET: " +recurso);
@@ -83,6 +90,7 @@ public class ReserveRunnable implements Runnable {
             throw new RuntimeException(e);
         }
     }
+
 
     public void showPage(String recurso, OutputStream out) {
 
