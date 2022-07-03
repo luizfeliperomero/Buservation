@@ -1,5 +1,6 @@
 package Log;
 
+import model.Response;
 import model.Seat;
 
 
@@ -22,16 +23,20 @@ public class Log {
     }
 
 
-    public synchronized void bookTickets(Seat seat) {
+    public synchronized Response bookTickets(Seat seat) {
         String msg = "";
-        File file = new File("log.txt");
+        File file = new File("C:\\Users\\luizf\\Desktop\\test\\oSystem\\Buservation\\Buservation\\log.txt");
+        Response response = Response.OK;
+
         String socketIp = socket.getInetAddress().toString();
         if(avaiableSeats.size() == 0) {
             msg = socketIp +" Tried to book a ticket but there was none left";
+            response = Response.EMPTY;
         }
         else {
             if(!avaiableSeats.contains(seat)){
                 msg = "BOOKING ----- " + socketIp + " Tried to book seat " + seat.getId() + " but it wasn't available";
+                response = Response.ERROR;
             }
             else {
                 Iterator<Seat> itr = avaiableSeats.iterator();
@@ -47,6 +52,7 @@ public class Log {
             System.out.println("Avaiable Seats After Book: " +avaiableSeats.size());
         }
         writeLog(msg, file);
+        return response;
     }
 
     public void writeLog(String msg, File file) {

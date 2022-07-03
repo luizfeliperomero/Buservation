@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
@@ -46,6 +47,15 @@ button {
     border-left: none;
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: bus 1.5s linear infinite;
+    object-fit: cover;
+}
+
+img {
+    z-index: 2;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -54,6 +64,26 @@ button {
     width: 50px;
     height: 30px;
     background-color: white;
+    z-index: 1;
+    animation: road 1s linear infinite;
+}
+
+@keyframes bus {
+    100% {
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0% {
+        transform: translateY(-1px);
+    }
+}
+
+@keyframes road {
+   100%{
+       transform: translateX(-3400px);
+   }
 }
 
 .grounds {
@@ -93,4 +123,28 @@ form {
     font-size: 20px;
     padding: 5px;
     text-align: center;
+}
+
+.success {
+    background-color: lightgreen;
+    color: #004200;
+    padding: 10px;
+    font-size: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.error, .empty {
+    border-radius: 15px;
+    background-color: #ffd6c1;
+    color: #f00;
+    padding: 10px;
+    font-size: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buservation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+    <h1><strong>BUSERVATION</strong></h1>
+    <div class="empty"><strong>Nenhum Assento Disponível</strong></div>
+    <div class="img">
+        <div></div>
+        <img src="btSeats.png">
+        <div class="groundL"></div>
+    </div>
+    <form action="/reserve">
+        <div class="field">
+            <label>Selecionar Assento</label>
+            <input type="number" min="1" value="1" max="16" name="id" id="id">
+        </div>
+        <button type="submit"><strong>Reservar</strong></button>
+    </form>
+</main>
+</body>
+</html>

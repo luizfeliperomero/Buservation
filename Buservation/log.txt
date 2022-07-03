@@ -4,3 +4,52 @@ BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1
 BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1
 BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1
 BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 6 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 6 but it wasn't available
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 6 but it wasn't available
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 6 but it wasn't available
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 6 but it wasn't available
+BOOKING ----- Seat 7 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 3 but it wasn't available
+BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 3 but it wasn't available
+BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 16 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 16 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 3 but it wasn't available
+BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 2 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 2 but it wasn't available
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 3 but it wasn't available
+BOOKING ----- Seat 4 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 2 but it wasn't available
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 2 but it wasn't available
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 2 but it wasn't available
+BOOKING ----- Seat 5 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 6 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 7 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 8 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 9 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 10 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 11 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 12 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 13 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 14 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 15 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 16 Booked by /0:0:0:0:0:0:0:1
+/0:0:0:0:0:0:0:1 Tried to book a ticket but there was none left
+/0:0:0:0:0:0:0:1 Tried to book a ticket but there was none left
+BOOKING ----- Seat 2 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available

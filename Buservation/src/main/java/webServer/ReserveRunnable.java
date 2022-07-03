@@ -1,6 +1,7 @@
 package webServer;
 
 import Log.Log;
+import model.Response;
 import model.Seat;
 
 import java.io.*;
@@ -47,7 +48,15 @@ public class ReserveRunnable implements Runnable {
                     Log log = new Log(clientSocket);
                     for (Seat s: seats) {
                         if(s.getId() == recursoId){
-                            log.bookTickets(s);
+                            Response response = log.bookTickets(s);
+                            if(response.equals(Response.EMPTY)){
+                                recurso = "empty.html";
+                            } else if (response.equals(Response.ERROR)) {
+                                recurso = "error.html";
+                            }
+                            else {
+                                recurso = "success.html";
+                            }
                         }
                     }
 
@@ -70,7 +79,8 @@ public class ReserveRunnable implements Runnable {
 
     public void showPage(String recurso, OutputStream out) {
 
-        File file = new File("src\\main\\resources\\" + recurso);
+        File file = new File("C:\\Users\\luizf\\Desktop\\test\\oSystem\\Buservation\\Buservation\\src\\main\\resources\\" + recurso);
+
         if (file.exists()) {
             Path path = file.toPath();
             String mimeType = null;
