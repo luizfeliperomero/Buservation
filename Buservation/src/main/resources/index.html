@@ -10,7 +10,10 @@
     <h1><strong>BUSERVATION</strong></h1>
     <div class="img"><img src="busTopSeatsNumbers.png"></div>
        <form action="/reserve">
-            <input type="text" name="id" id="id">
+            <div class="field">
+                <label>Assento Desejado</label>
+                <input type="number" min="1" max="16" name="id" id="id">
+            </div>
             <button type="submit"><strong>Confirmar</strong></button>
        </form>
    </main>
