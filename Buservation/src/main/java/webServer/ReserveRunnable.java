@@ -24,30 +24,6 @@ public class ReserveRunnable implements Runnable {
     @Override
     public void run() {
         try {
-            /*BufferedReader input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-
-            String s;
-            while((s = input.readLine()) != null){
-                System.out.println(s);
-                if(s.isEmpty()){
-                    break;
-                }
-            }
-
-            OutputStream outputStream = clientSocket.getOutputStream();
-            outputStream.write("HTTP/1.11 200 OK\r\n".getBytes(StandardCharsets.UTF_8));
-            outputStream.write("\r\n".getBytes(StandardCharsets.UTF_8));
-            outputStream.write("<b>Buservation</b>".getBytes(StandardCharsets.UTF_8));
-            outputStream.write("\r\n\r\n".getBytes(StandardCharsets.UTF_8));
-            outputStream.flush();
-
-
-            input.close();
-            outputStream.close();
-            clientSocket.close(); */
-            //System.out.println("\n\nConexão recebida de " + socket.getInetAddress());
-
-
             InputStream in = clientSocket.getInputStream();
             OutputStream out = clientSocket.getOutputStream();
             byte[] buffer = new byte[1024];
