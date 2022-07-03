@@ -1,5 +1,7 @@
 package webServer;
 
+import Log.Log;
+
 import java.io.*;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
@@ -57,33 +59,19 @@ public class ReserveRunnable implements Runnable {
             System.out.println("\nRecurso: " +recurso);
             if (metodo.equals("GET")) {
                 recurso = recurso.substring(1);
-                System.out.println("Recurso GET: " +recurso);
-                File file = new File("src\\main\\resources\\" + recurso);
-                //HEADER = HEADER.replace("text/html", "text/css");
-                if (file.exists()) {
-                    Path path = file.toPath();
-                    String mimeType = Files.probeContentType(path);
-                    System.out.println("MimeType: " +mimeType);
-                    String head = HEADER;
-                    if (mimeType != null) {
-                        head = HEADER.replaceAll("mime", mimeType);
-                    }
-                    System.out.println(head);
-                    out.write(head.getBytes(StandardCharsets.UTF_8));
-                    FileInputStream fin = new FileInputStream(file);
-                    byte[] buf_arquivo = new byte[1024];
-                    int read;
-                    do {
-                        read = fin.read(buf_arquivo);
-                        if (read > 0) {
-                            out.write(buf_arquivo, 0, read);
-                        }
-                    } while (read > 0);
-                    fin.close();
-                } else {
-                    System.out.println("recurso " + recurso + " nao encontrado.");
-                    out.write("HTTP/1.1 404 NOT FOUND\n\n".getBytes(StandardCharsets.UTF_8));
+                String[] recursoSplited = recurso.split("\\?");
+                recurso = recursoSplited[0];
+                if(recurso.equals("reserve.html")) {
+                    String recursoId = recursoSplited[1].substring(3);
+                    System.out.println("Recurso Posicao 2: " + recursoId);
+                    recurso = "index.html";
+                    Log log = new Log(clientSocket);
+                    log.bookTickets(Integer.parseInt(recursoId));
+
                 }
+                System.out.println("Recurso GET: " +recurso);
+
+                showPage(recurso, out);
             }
             in.close();
             out.close();
@@ -93,6 +81,65 @@ public class ReserveRunnable implements Runnable {
 
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    public void showPage(String recurso, OutputStream out) {
+
+        File file = new File("src\\main\\resources\\" + recurso);
+        if (file.exists()) {
+            Path path = file.toPath();
+            String mimeType = null;
+            try {
+                mimeType = Files.probeContentType(path);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            System.out.println("MimeType: " +mimeType);
+            String head = HEADER;
+            if (mimeType != null) {
+                head = HEADER.replaceAll("mime", mimeType);
+            }
+            System.out.println(head);
+            try {
+                out.write(head.getBytes(StandardCharsets.UTF_8));
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            FileInputStream fin = null;
+            try {
+                fin = new FileInputStream(file);
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+            byte[] buf_arquivo = new byte[1024];
+            int read;
+            do {
+                try {
+                    read = fin.read(buf_arquivo);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+                if (read > 0) {
+                    try {
+                        out.write(buf_arquivo, 0, read);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+            } while (read > 0);
+            try {
+                fin.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        } else {
+            System.out.println("recurso " + recurso + " nao encontrado.");
+            try {
+                out.write("HTTP/1.1 404 NOT FOUND\n\n".getBytes(StandardCharsets.UTF_8));
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }

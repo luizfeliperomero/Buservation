@@ -6,7 +6,7 @@ public class Seat {
 
     public Seat(int id, boolean empty) {
         this.id = id;
-        this.empty = empty;
+        this.empty = true;
     }
 
     public int getId() {
