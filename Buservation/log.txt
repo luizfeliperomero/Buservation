@@ -17,3 +17,4 @@ BOOKING ----- Seat 15 Booked by /0:0:0:0:0:0:0:1
 BOOKING ----- Seat 16 Booked by /0:0:0:0:0:0:0:1
 /0:0:0:0:0:0:0:1 Tried to book a ticket but there was none left
 BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 3 but it wasn't available
