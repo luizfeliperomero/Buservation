@@ -9,7 +9,7 @@ import java.nio.file.Path;
 public class ReserveRunnable implements Runnable {
     protected Socket clientSocket;
 
-    private static final String HEADER = "HTTP/1.1 200 OK\n" +
+    private static String HEADER = "HTTP/1.1 200 OK\n" +
             "Content-Type: mime; charset=UTF-8\n\n";
 
     public ReserveRunnable (Socket clientSocket) {
@@ -58,7 +58,8 @@ public class ReserveRunnable implements Runnable {
             if (metodo.equals("GET")) {
                 recurso = recurso.substring(1);
                 System.out.println("Recurso GET: " +recurso);
-                File file = new File("src\\main\\resources\\test.html" + recurso);
+                File file = new File("src\\main\\resources\\" + recurso);
+                //HEADER = HEADER.replace("text/html", "text/css");
                 if (file.exists()) {
                     Path path = file.toPath();
                     String mimeType = Files.probeContentType(path);
