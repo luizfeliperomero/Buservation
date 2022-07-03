@@ -9,6 +9,7 @@
 body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
 main {
@@ -37,6 +38,29 @@ button {
     background-color: aquamarine;
     padding: 10px;
     transition: 0.5s ease-in-out;
+}
+
+.img {
+    border: 5px solid #fff;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.groundL {
+    width: 50px;
+    height: 30px;
+    background-color: white;
+}
+
+.grounds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
 }
 
 button:hover {
