@@ -62,3 +62,30 @@ BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 2 but it wasn't available
 BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1
 BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available
 BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-03 19:49:35.336
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-03 19:53:14.551
+BOOKING ----- Seat 15 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-03 23:50:56.847
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:07:52.759
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-04 00:07:54.614
+BOOKING ----- Seat 2 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:07:57.729
+BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:08:00.196
+BOOKING ----- Seat 4 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:08:03.274
+BOOKING ----- Seat 5 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:08:05.94
+BOOKING ----- Seat 6 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:08:09.298
+BOOKING ----- Seat 7 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:08:12.289
+BOOKING ----- Seat 8 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:08:15.399
+BOOKING ----- Seat 9 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:08:18.332
+BOOKING ----- Seat 10 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:08:20.83
+BOOKING ----- Seat 11 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:08:23.203
+BOOKING ----- Seat 12 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:08:27.3
+BOOKING ----- Seat 13 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:08:31.077
+BOOKING ----- Seat 14 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:08:34.352
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 15 but it wasn't available -----2022-07-04 00:08:37.954
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 15 but it wasn't available -----2022-07-04 00:08:45.829
+BOOKING ----- Seat 16 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 00:08:50.15
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book a ticket but there was none left ----- 2022-07-04 00:08:52.806
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book a ticket but there was none left ----- 2022-07-04 00:13:39.946
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book a ticket but there was none left ----- 2022-07-04 00:14:51.141
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book a ticket but there was none left ----- 2022-07-04 00:16:55.569
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 01:19:06.868
+BOOKING ----- Seat 12 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 01:19:14.791
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-04 01:19:19.032

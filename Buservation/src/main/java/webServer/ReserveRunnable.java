@@ -41,7 +41,10 @@ public class ReserveRunnable implements Runnable {
                 recurso = recurso.substring(1);
                 String[] recursoSplited = recurso.split("\\?");
                 recurso = recursoSplited[0];
-                if(recurso.equals("reserve")) {
+                if(recurso.isEmpty()){
+                    recurso = "index.html";
+                }
+                else if(recurso.equals("reserve")) {
                     int recursoId = Integer.parseInt(recursoSplited[1].substring(3));
                     System.out.println("Recurso Posicao 2: " + recursoId);
                     recurso = "index.html";
@@ -59,7 +62,6 @@ public class ReserveRunnable implements Runnable {
                             }
                         }
                     }
-
                 }
                 System.out.println("Recurso GET: " +recurso);
 
@@ -130,6 +132,8 @@ public class ReserveRunnable implements Runnable {
         } else {
             System.out.println("recurso " + recurso + " nao encontrado.");
             try {
+                recurso = "404.html";
+                showPage(recurso, out);
                 out.write("HTTP/1.1 404 NOT FOUND\n\n".getBytes(StandardCharsets.UTF_8));
             } catch (IOException e) {
                 throw new RuntimeException(e);

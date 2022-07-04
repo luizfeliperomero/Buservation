@@ -10,7 +10,7 @@ public class SocketServer {
 
     public void runServer() {
          try {
-            serverSocket = new ServerSocket(port);
+             serverSocket = new ServerSocket(port);
              System.out.println("Server Listening on Port " +port);
          }catch (IOException e) {
              e.printStackTrace();
