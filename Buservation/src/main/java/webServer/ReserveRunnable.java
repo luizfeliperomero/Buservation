@@ -9,6 +9,7 @@ import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.sql.Timestamp;
 
 import static webServer.Server.seats;
 
@@ -45,13 +46,17 @@ public class ReserveRunnable implements Runnable {
                     recurso = "index.html";
                 }
                 else if(recurso.equals("reserve")) {
-                    int recursoId = Integer.parseInt(recursoSplited[1].substring(3));
+                    String[] rec1 = recursoSplited[1].split("&");
+
+                    int recursoId = Integer.parseInt(rec1[0].substring(3));
+                    String recursoName = rec1[1].substring(5);
+                    System.out.println("Recurso name: " +recursoName);
                     System.out.println("Recurso Posicao 2: " + recursoId);
                     recurso = "index.html";
                     Log log = new Log(clientSocket);
                     for (Seat s: seats) {
                         if(s.getId() == recursoId){
-                            Response response = log.bookTickets(s);
+                            Response response = log.bookTickets(s, recursoName);
                             if(response.equals(Response.EMPTY)){
                                 recurso = "empty.html";
                             } else if (response.equals(Response.ERROR)) {
@@ -108,16 +113,41 @@ public class ReserveRunnable implements Runnable {
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             }
-            byte[] buf_arquivo = new byte[1024];
-            int read;
+            byte[] buf_arquivo;
+            try {
+                buf_arquivo = fin.readAllBytes();
+                String html = new String(buf_arquivo);
+                String elements = "";
+                for (Seat seat: seats) {
+                    String element = "<div";
+                    if(seat.isEmpty()) {
+                        element += " class=\"emptySeat\"";
+                        element += ">" + "<p>" + seat.getId() + "</p>"+ "</div>";
+                    }
+                    else {
+                        element += " class=\"notEmpty\"";
+                        element += ">" + "<p>" + seat.getId() + "</p>"+ "<p class=\"name\">" + seat.getOwner() + "</p>" + "<p class=\"date\">"+ seat.getTimestamp()+ "</p>" + "</div>";
+                    }
+                    elements += element + "\n";
+                }
+                html = html.replace("<seats />", elements);
+                buf_arquivo = html.getBytes(StandardCharsets.UTF_8);
+                out.write(buf_arquivo);
+                fin.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            /*int read;
             do {
                 try {
                     read = fin.read(buf_arquivo);
+                    System.out.println("Read Before: " +read);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
                 if (read > 0) {
                     try {
+                        System.out.println("Read After: " +read);
                         out.write(buf_arquivo, 0, read);
                     } catch (IOException e) {
                         throw new RuntimeException(e);
@@ -128,7 +158,7 @@ public class ReserveRunnable implements Runnable {
                 fin.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
-            }
+            }*/
         } else {
             System.out.println("recurso " + recurso + " nao encontrado.");
             try {

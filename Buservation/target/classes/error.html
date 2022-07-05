@@ -12,16 +12,26 @@
     <div class="road">
     <div class="img">
         <div></div>
-        <img src="btSeats.png">
-        <div class="groundL"></div>
+        <div class="bus">
+            <div class="seats">
+                <seats />
+            </div>
+        </div>
+        <!--<div class="groundL"></div>-->
     </div>
     </div>
     <form action="/reserve">
         <div class="field">
+            <div>
             <label>Selecionar Assento</label>
             <input type="number" min="1" value="1" max="16" name="id" id="id">
+                </div>
+            <div>
+            <label>Nome</label>
+            <input type="text" name="name" id="name">
+            </div>
+            <button type="submit"><strong>Reservar</strong></button>
         </div>
-        <button type="submit"><strong>Reservar</strong></button>
     </form>
 </main>
 </body>

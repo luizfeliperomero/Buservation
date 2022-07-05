@@ -15,7 +15,7 @@ body {
 
 main {
     background-color: #1e1e1e;
-    gap: 50px;
+    gap: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,13 +34,17 @@ h1 {
 
 button {
     width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
-    border-radius: 10px;
     cursor: pointer;
+    border-radius: 10px;
     font-size: 24px;
     background-color: aquamarine;
     padding: 10px;
-    transition: 0.1s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .road {
@@ -48,6 +52,7 @@ button {
     width: 100%;
     border-right: none;
     border-left: none;
+    padding: 100px;
 }
 
 .img {
@@ -55,7 +60,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: bus 1.5s linear infinite;
+    /*animation: bus 1.5s linear infinite;*/
     object-fit: cover;
 }
 
@@ -66,13 +71,55 @@ img {
     align-items: center;
 }
 
+
+.seats {
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.notEmpty {
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    border: 1px solid lightgrey;
+    color: lightgrey;
+}
+
+.date {
+    font-size: 14px;
+    text-align: center;
+}
+
+.name {
+    font-size: 20px;
+}
+
+
+.emptySeat {
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid springgreen;
+    color: springgreen;
+}
+
 .groundL {
     width: 50px;
     height: 30px;
     background-color: white;
     z-index: 1;
-    animation: road 1s linear infinite;
+    /*animation: road 1s linear infinite;*/
 }
+
 
 @keyframes bus {
     100% {
@@ -104,9 +151,8 @@ button:hover {
 }
 .field {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 40px;
 }
 
 .field label {

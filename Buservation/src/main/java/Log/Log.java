@@ -24,7 +24,7 @@ public class Log {
     }
 
 
-    public synchronized Response bookTickets(Seat seat) {
+    public synchronized Response bookTickets(Seat seat, String name) {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         String msg = "";
         File file = new File("C:\\Users\\luizf\\Desktop\\test\\oSystem\\Buservation\\Buservation\\log.txt");
@@ -45,6 +45,8 @@ public class Log {
                 while (itr.hasNext()){
                     Seat s = itr.next();
                     if(s.getId() == seat.getId()){
+                        s.setOwner(name);
+                        s.setTimestamp(timestamp);
                         msg = "BOOKING ----- " + "Seat " + s.getId() + " Booked by " + socketIp + " ----- " +timestamp;
                         s.setEmpty(false);
                         itr.remove();

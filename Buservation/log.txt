@@ -89,3 +89,92 @@ BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book a ticket but there was none left --
 BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 01:19:06.868
 BOOKING ----- Seat 12 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 01:19:14.791
 BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-04 01:19:19.032
+BOOKING ----- Seat 2 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 22:54:58.643
+BOOKING ----- Seat 2 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 23:21:27.589
+BOOKING ----- Seat 2 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-04 23:23:04.904
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:21:58.646
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:26:56.621
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:27:46.599
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:30:42.034
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:33:42.909
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 00:33:44.443
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:34:33.248
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:35:08.793
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:36:38.402
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:37:02.611
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:37:46.617
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:39:16.896
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:39:32.005
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:48:54.084
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:50:51.328
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:55:56.424
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:58:06.934
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:58:24.667
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 00:59:26.414
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:00:46.485
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:01:27.698
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:01:54.605
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:03:38.754
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 01:03:41.445
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:05:06.169
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:07:15.172
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:08:20.494
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:09:08.729
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:10:00.288
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:10:34.768
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:11:18.035
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 01:11:20.601
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:12:37.958
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:12:57.886
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 01:12:58.904
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 01:13:00.398
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:14:11.958
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:15:03.489
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:15:20.814
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:16:09.663
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:18:51.955
+BOOKING ----- Seat 14 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:19:09.318
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 01:19:56.905
+BOOKING ----- Seat 16 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:20:56.611
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:22:12.847
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 01:22:16.332
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:23:24.901
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 01:23:30.672
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:25:37.094
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 01:25:38.276
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:26:48.509
+BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:27:01.507
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 01:28:31.222
+BOOKING ----- Seat 4 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:28:46.08
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:30:31.967
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 01:31:02.727
+BOOKING ----- Seat 2 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:05.807
+BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:09.886
+BOOKING ----- Seat 4 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:12.421
+BOOKING ----- Seat 5 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:15.058
+BOOKING ----- Seat 6 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:18.425
+BOOKING ----- Seat 7 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:21.971
+BOOKING ----- Seat 8 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:25.06
+BOOKING ----- Seat 9 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:29.551
+BOOKING ----- Seat 10 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:32.435
+BOOKING ----- Seat 11 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:36.041
+BOOKING ----- Seat 12 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:40.044
+BOOKING ----- Seat 13 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:43.11
+BOOKING ----- Seat 14 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:48.02
+BOOKING ----- Seat 15 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:54.932
+BOOKING ----- Seat 16 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:31:59.452
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book a ticket but there was none left ----- 2022-07-05 01:32:00.778
+BOOKING ----- Seat 5 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:34:22.985
+BOOKING ----- Seat 2 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:34:29.455
+BOOKING ----- Seat 16 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:34:37.254
+BOOKING ----- Seat 16 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 01:45:58.954
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 02:04:58.344
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 02:05:06.041
+BOOKING ----- Seat 8 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 13:21:03.934
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 13:21:22.154
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 13:21:32.786
+BOOKING ----- Seat 2 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 13:22:25.122
+BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 13:22:32.421
+BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 13:27:53.017
+BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 13:28:03.704
+BOOKING ----- Seat 2 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 13:28:11.394
