@@ -89,6 +89,7 @@ img {
     align-items: center;
     border: 1px solid lightgrey;
     color: lightgrey;
+    cursor: default;
 }
 
 .date {
@@ -110,6 +111,12 @@ img {
     align-items: center;
     border: 1px solid springgreen;
     color: springgreen;
+    transition: 0.5s ease-in-out;
+    cursor: default;
+}
+
+.emptySeat:hover {
+    transform: scale(1.2);
 }
 
 .groundL {

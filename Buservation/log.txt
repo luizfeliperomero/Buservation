@@ -178,3 +178,4 @@ BOOKING ----- Seat 3 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 13:22:32.421
 BOOKING ----- Seat 1 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 13:27:53.017
 BOOKING ----- /0:0:0:0:0:0:0:1 Tried to book seat 1 but it wasn't available -----2022-07-05 13:28:03.704
 BOOKING ----- Seat 2 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-05 13:28:11.394
+BOOKING ----- Seat 6 Booked by /0:0:0:0:0:0:0:1 ----- 2022-07-06 15:05:54.405
