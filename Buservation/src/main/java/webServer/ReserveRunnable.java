@@ -107,15 +107,9 @@ public class ReserveRunnable implements Runnable {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-            FileInputStream fin = null;
-            try {
-                fin = new FileInputStream(file);
-            } catch (FileNotFoundException e) {
-                throw new RuntimeException(e);
-            }
             byte[] buf_arquivo;
             try {
-                buf_arquivo = fin.readAllBytes();
+                buf_arquivo = Files.readAllBytes(file.toPath());
                 String html = new String(buf_arquivo);
                 String elements = "";
                 for (Seat seat: seats) {
@@ -133,7 +127,6 @@ public class ReserveRunnable implements Runnable {
                 html = html.replace("<seats />", elements);
                 buf_arquivo = html.getBytes(StandardCharsets.UTF_8);
                 out.write(buf_arquivo);
-                fin.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
