@@ -86,7 +86,8 @@ public class ReserveRunnable implements Runnable {
 
     public void showPage(String recurso, OutputStream out) {
 
-        File file = new File("C:\\Users\\luizf\\Desktop\\test\\oSystem\\Buservation\\Buservation\\src\\main\\resources\\" + recurso);
+        File file = new File("Buservation" + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + recurso);
+
 
         if (file.exists()) {
             Path path = file.toPath();
