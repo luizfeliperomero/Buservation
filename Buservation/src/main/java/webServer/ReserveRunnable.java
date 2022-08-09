@@ -4,6 +4,7 @@ import Log.Log;
 import model.Response;
 import model.Seat;
 
+import java.io.File;
 import java.io.*;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
