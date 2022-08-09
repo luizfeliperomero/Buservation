@@ -27,7 +27,7 @@ public class Log {
     public synchronized Response bookTickets(Seat seat, String name) {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         String msg = "";
-        File file = new File("C:\\Users\\luizf\\Desktop\\test\\oSystem\\Buservation\\Buservation\\log.txt");
+        File file = new File("Buservation" + File.separator + "log.txt");
         Response response = Response.OK;
 
         String socketIp = socket.getInetAddress().toString();
