@@ -89,6 +89,8 @@ public class ReserveRunnable implements Runnable {
 
         File file = new File("Buservation" + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + recurso);
 
+		System.Out.Println(file.getAbsolutePath());
+
         if (file.exists()) {
             Path path = file.toPath();
             String mimeType = null;
