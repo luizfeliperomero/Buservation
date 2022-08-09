@@ -4,6 +4,7 @@ import Log.Log;
 import model.Response;
 import model.Seat;
 
+import java.io.File;
 import java.io.*;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
@@ -88,7 +89,6 @@ public class ReserveRunnable implements Runnable {
 
         File file = new File("Buservation" + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + recurso);
 
-
         if (file.exists()) {
             Path path = file.toPath();
             String mimeType = null;
@@ -108,15 +108,9 @@ public class ReserveRunnable implements Runnable {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-            FileInputStream fin = null;
-            try {
-                fin = new FileInputStream(file);
-            } catch (FileNotFoundException e) {
-                throw new RuntimeException(e);
-            }
             byte[] buf_arquivo;
             try {
-                buf_arquivo = fin.readAllBytes();
+                buf_arquivo = Files.readAllBytes(file.toPath());
                 String html = new String(buf_arquivo);
                 String elements = "";
                 for (Seat seat: seats) {
@@ -134,7 +128,6 @@ public class ReserveRunnable implements Runnable {
                 html = html.replace("<seats />", elements);
                 buf_arquivo = html.getBytes(StandardCharsets.UTF_8);
                 out.write(buf_arquivo);
-                fin.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
