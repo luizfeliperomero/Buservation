@@ -7,3 +7,10 @@ services:
         restart: unless-stopped
         ports:
             - 8080:8081
+        volumes:
+            - log-data:/Buservation/Buservation/
+                
+
+volumes:
+    log-data:
+        driver: local
