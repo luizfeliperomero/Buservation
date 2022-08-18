@@ -28,7 +28,7 @@ public class Log {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         String msg = "";
         File file = new File(".." + File.separator + ".." + File.separator + "log.txt");
-        System.out.println(file.getAbsolutePath());
+        System.out.println("Log Path: " +file.getAbsolutePath());
         Response response = Response.OK;
 
         String socketIp = socket.getInetAddress().toString();
