@@ -27,7 +27,7 @@ public class Log {
     public synchronized Response bookTickets(Seat seat, String name) {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         String msg = "";
-        File file = new File(".." + File.separator + ".." + File.separator + "logs" + File.separator + "log.txt");
+        File file = new File(".." + File.separator + ".." + File.separator + ".." + File.separator + "logs" + File.separator + "log.txt");
         System.out.println("Log Path: " +file.getAbsolutePath());
         Response response = Response.OK;
 
